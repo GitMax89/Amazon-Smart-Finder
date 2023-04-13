@@ -1,31 +1,33 @@
 <!DOCTYPE html>
 <html>
 <head>
-   <title>Amazon Product Search</title>
-   <meta name="viewport" content="width=device-width, initial-scale=1">
-   <link rel="stylesheet" href="css/styles.css">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Ricerca prodotti Amazon</title>
+	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-   <div class="main-container">
-      <h1>Amazon Smart Finder</h1>
-      <form>
-         <label for="search">Cerca prodotto:</label>
-         <input type="text" id="search" name="search">
-         <br><br>
-         <label for="sort">Scegli un filtro:</label>
-         <select name="sort" id="sort">
-            <option value="price_low">Prezzo Decrescente</option>
-            <option value="rating_high">Voti Migliori</option>
-            <option value="in_evidenza">In Evidenza</option>
-         </select>
-         <br><br>
-         <label for="prime">Spedizione Prime:</label>
-         <input type="checkbox" id="prime" name="prime" value="true">
-         <br><br>
-         <input type="submit" value="Search" onclick="searchAmazon(event)">
-      </form>
-      <div id="results"></div>
-   </div>
-   <script src="js/search.js"></script>
+	<div class="main-container">
+		<h1>Ricerca prodotti Amazon</h1>
+		<form id="search-form">
+			<label for="search-keyword">Cerca prodotto:</label>
+			<input type="text" id="search-keyword" name="search-keyword" required>
+			<div class="filter-container">
+				<label for="sort-by">Ordina per:</label>
+				<select id="sort-by" name="sort-by">
+					<option value="relevancerank">Rilevanza</option>
+					<option value="price-desc-rank">Prezzo più alto</option>
+					<option value="price-asc-rank">Prezzo più basso</option>
+					<option value="review-rank">Miglior voto</option>
+					<option value="date-desc-rank">Di tendenza</option>
+				</select>
+				<label for="prime-checkbox">Spedizione Prime:</label>
+				<input type="checkbox" id="prime-checkbox" name="prime-checkbox">
+			</div>
+			<button type="submit">Cerca</button>
+		</form>
+	</div>
+
+	<script src="js/index.js"></script>
 </body>
 </html>

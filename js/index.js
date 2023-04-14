@@ -6,7 +6,7 @@ const getSearchResults = async (searchKeyword, searchOptions) => {
 	try {
 		let searchURL = `https://www.amazon.it/s?k=${searchKeyword}&tag=${AFFILIATE_TAG}`;
 		if (searchOptions.sortBy) searchURL += `&s=${searchOptions.sortBy}`;
-		if (searchOptions.primeOnly) searchURL += '&rh=p_76%3A419357031';
+		if (searchOptions.primeOnly) searchURL += '&rh=p_85%3A20930965031';
 		window.open(searchURL, '_blank');
 	} catch (error) {
 		console.error(error);

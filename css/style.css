@@ -8,7 +8,7 @@ html, body {
 	margin: 0;
 	padding: 0;
 	background-color: #77bdf6;
-	background-image: url('/blurry-gradient-haikei.png');
+	background-image: url('https://i.postimg.cc/zXHW3g2v/blurry-gradient-haikei.png');
 	background-size: cover;
 }
 
@@ -35,7 +35,7 @@ h1 {
 form {
 	display: flex;
 	flex-direction: column;
-	align-items: center;
+	align-items: left;
 	width: 100%;
 	max-width: 500px;
 	background-color: rgba(23, 20, 60, 0.7);
@@ -44,11 +44,15 @@ form {
 	border-radius: 10px;
 }
 
+label#prime{
+	color: #f7a934;
+}
+
 label {
 	font-size: 1.5rem;
 	font-weight: bold;
 	margin-bottom: 10px;
-	color: white;
+	color: rgb(251, 250, 250);
 }
 
 input[type=text], select {
@@ -57,63 +61,25 @@ input[type=text], select {
 	border: none;
 	border-radius: 5px;
 	width: 100%;
-	margin-bottom: 20px;
+	margin-bottom: 35px;
+	margin-top: 10px;
 }
 
 input[type=checkbox] {
-	margin-left: 5px;
+	margin-left: 15px;
 	margin-right: 10px;
 	transform: scale(1.5);
-}
-
-input[type=submit] {
-	background-color: #FF9900;
-	color: white;
-	padding: 10px 20px;
-	font-size: 1.2rem;
-	border: none;
-	border-radius: 5px;
-	cursor: pointer;
+	margin-bottom: 20px;
 }
 
 button[type=submit] {
 	color: rgb(3, 3, 3);
-	background-color: aliceblue;
+	background-color: rgb(249, 249, 249);
+	border: none;
 	padding: 10px 20px;
 	font-size: 1.2rem;
 	border-radius: 5px;
 	margin-top: 20px
-}
-
-#results {
-	width: 100%;
-	max-width: 500px;
-	margin-top: 40px;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
-	padding: 20px;
-	background-color: rgba(255, 255, 255, 0.9);
-	box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-	border-radius: 10px;
-	box-sizing: border-box;
-}
-
-#results h2 {
-	margin-bottom: 20px;
-	font-size: 2rem;
-}
-
-#results hr {
-	width: 100%;
-	margin-top: 20px;
-}
-
-.result-container {
-	display: flex;
-	align-items: center;
-	margin: 20px 0;
 }
 
 .image-container {

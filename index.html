@@ -13,15 +13,15 @@
 			<label for="search-keyword">Cerca prodotto:</label>
 			<input type="text" id="search-keyword" name="search-keyword" required>
 			<div class="filter-container">
-				<label for="sort-by">Ordina per:</label>
+				<label for="sort-by" id="text">Scegli un filtro:</label>
 				<select id="sort-by" name="sort-by">
                <option value="price-asc-rank">Prezzo più basso</option>
                <option value="price-desc-rank">Prezzo più alto</option>
-               <option value="review-rank">Miglior voto</option>
+               <option value="review-rank">Valutazione migliore</option>
                <option value="date-desc-rank">Di tendenza</option>
 					<option value="relevancerank">Rilevanza</option>
 				</select>
-				<label for="prime-checkbox">Spedizione Prime:</label>
+				<label for="prime-checkbox" id="prime">Prime:</label>
 				<input type="checkbox" id="prime-checkbox" name="prime-checkbox">
 			</div>
 			<button type="submit">Cerca</button>

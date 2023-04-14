@@ -7,7 +7,9 @@ html, body {
 	font-size: 16px;
 	margin: 0;
 	padding: 0;
-	background-color: #77f6e7;
+	background-color: #77bdf6;
+	background-image: url('/blurry-gradient-haikei.png');
+	background-size: cover;
 }
 
 .main-container {
@@ -24,7 +26,7 @@ html, body {
 }
 
 h1 {
-	color: rgb(2, 2, 2);
+	color: rgb(251, 252, 249);
 	text-align: center;
 	margin-bottom: 30px;
 	font-size: 27px;
@@ -36,9 +38,9 @@ form {
 	align-items: center;
 	width: 100%;
 	max-width: 500px;
-	background-color: rgba(0, 0, 0, 0.7);
+	background-color: rgba(23, 20, 60, 0.7);
 	padding: 20px;
-	box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+	box-shadow: 0 0 10px rgba(9, 9, 9, 90);
 	border-radius: 10px;
 }
 

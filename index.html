@@ -1,33 +1,41 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Ricerca prodotti Amazon</title>
-	<link rel="stylesheet" href="css/style.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ricerca prodotti Amazon</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-	<div class="main-container">
-		<h1>Amazon Smart finder</h1>
-		<form id="search-form">
-			<label for="search-keyword">Cerca prodotto:</label>
-			<input type="text" id="search-keyword" name="search-keyword" required>
-			<div class="filter-container">
-				<label for="sort-by" id="text">Scegli un filtro:</label>
-				<select id="sort-by" name="sort-by">
-               <option value="price-asc-rank">Prezzo più basso</option>
-               <option value="price-desc-rank">Prezzo più alto</option>
-               <option value="review-rank">Valutazione migliore</option>
-               <option value="date-desc-rank">Di tendenza</option>
-					<option value="relevancerank">Rilevanza</option>
-				</select>
-				<label for="prime-checkbox" id="prime">Prime:</label>
-				<input type="checkbox" id="prime-checkbox" name="prime-checkbox">
-			</div>
-			<button type="submit">Cerca</button>
-		</form>
-	</div>
+  <nav>
+    <ul>
+      <li><a href="/offerte-del-giorno" class="active">Offerte del giorno</a></li>
+      <li><a href="/offerte-a-tempo">Offerte a tempo</a></li>
+      <li><a href="/piu-venduti">Outlet day</a></li>
+    </ul>
+  </nav>
 
-	<script src="js/index.js"></script>
+  <div class="main-container">
+    <h1 class="logo">Smart Finder</h1>
+    <form id="search-form">
+      <label for="search-keyword">Cerca prodotto:</label>
+      <input type="text" id="search-keyword" name="search-keyword" required>
+      <div class="filter-container">
+        <label for="sort-by" id="text">Scegli un filtro:</label>
+        <select id="sort-by" name="sort-by">
+          <option value="price-asc-rank">Prezzo più basso</option>
+          <option value="price-desc-rank">Prezzo più alto</option>
+          <option value="review-rank">Valutazione migliore</option>
+          <option value="date-desc-rank">Di tendenza</option>
+          <option value="relevancerank">Rilevanza</option>
+        </select>
+        <label for="prime-checkbox" id="prime">Prime:</label>
+        <input type="checkbox" id="prime-checkbox" name="prime-checkbox">
+      </div>
+      <button type="submit">Cerca</button>
+    </form>
+  </div>
+  <script src="js/index.js"></script>
+  <footer><p>In qualità di Affiliato Amazon ricevo un guadagno dagli acquisti idonei.</p></footer>
 </body>
 </html>

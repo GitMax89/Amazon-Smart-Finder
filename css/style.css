@@ -17,7 +17,7 @@ html, body {
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
-	min-height: 5vh;
+	min-height: 50vh;
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center center;
@@ -184,20 +184,32 @@ nav a:hover {
 }
 
 /* affiliate description at bottom */
-
-footer {
-	width: 100%;
-	background-color: #F7A934;
-	text-align: center;
-	position: absolute;
-	bottom: 0;
-  }
   
-  footer p {
+p {
 	margin: 0 auto;
 	padding: 2px;
 	color: white;
-	font-size: 14px;
+	font-size: 10px;
 	text-align: center;
 	max-width: 80%;
+	margin-top:35px;
+	margin-bottom: -10px;
+  }
+
+/* back button */
+
+  .back-button {
+	margin-top: 20px;
+	padding: 10px 20px;
+	font-size: 1.2rem;
+	border: none;
+	border-radius: 5px;
+	color: #fff;
+	background-color: #f7a934;
+	cursor: pointer;
+	transition: all 0.3s ease-in-out;
+  }
+  
+  .back-button:hover {
+	background-color: #FFB347;
   }

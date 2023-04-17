@@ -195,21 +195,3 @@ p {
 	margin-top:35px;
 	margin-bottom: -10px;
   }
-
-/* back button */
-
-  .back-button {
-	margin-top: 20px;
-	padding: 10px 20px;
-	font-size: 1.2rem;
-	border: none;
-	border-radius: 5px;
-	color: #fff;
-	background-color: #f7a934;
-	cursor: pointer;
-	transition: all 0.3s ease-in-out;
-  }
-  
-  .back-button:hover {
-	background-color: #FFB347;
-  }

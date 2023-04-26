@@ -8,7 +8,7 @@ html, body {
 	margin: 0;
 	padding: 0;
 	background-color: #77bdf6;
-	background-image: url('https://i.postimg.cc/zXHW3g2v/blurry-gradient-haikei.png');
+	background-image: url('https://i.postimg.cc/W3LPnvXr/blurry-gradient-haikei.png');
 	background-size:3000px;
 }
 
@@ -160,7 +160,7 @@ nav ul {
   align-items: center; /* centro gli elementi verticalmente */
   list-style: none;
   margin: 0;
-  padding: 20px 0;
+  padding: 14px 0;
   background-color: #F7A934;
   border-style: double;
 }
